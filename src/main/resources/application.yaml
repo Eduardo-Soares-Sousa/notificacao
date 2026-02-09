@@ -1,0 +1,27 @@
+spring:
+  mail:
+    host: smtp.gmail.com
+    port: 587
+    username: # Email usado que gerou Senha de app do google
+    password: # Senha gerada no Senha de app
+    protocol: smtp
+    properties:
+      mail:
+        smtp:
+          auth: true
+          starttls:
+            enable: true
+          connectiontimeout: 5000
+          timeout: 3000
+          writetimeout: 5000
+
+  thymeleaf:
+    enabled: true
+
+envio:
+  email:
+    remetente: # Email usado
+    nomeRemetente: # Nome de usuário do email
+
+server:
+  port: 8082
